@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="font-Poppins dark:bg-slate-900">
+
+    <!-- ? Navbar Start -->
+        <header class="bg-transparent absolute top-0 left-0 w-full  flex items-center z-10 py-3 px-7 md:px-12 md:py-4 lg:px-16">
+            <div class="container flex justify-between items-center  relative">
+                <a href="#" class="font-semibold lg:text-xl text-primary whitespace-nowrap mr-32 md:text-2xl">Marvel Tjenyani</a>
+
+                <button id="hamburger" class="absolute block right-4 lg:hidden">
+                    <div class="hamburger-line transition duration-300 ease-in-out origin-top-left "></div>
+                    <div class="hamburger-line transition duration-300 ease-in-out "></div>
+                    <div class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></div>
+                </button>
+        
+    
+            <div id="nav_menu" class="hidden absolute max-w-[220px] top-full w-full right-4 bg-white rounded-lg shadow-lg py-3 lg:block lg:bg-transparent lg:rounded-none lg:shadow-none lg:max-w-full lg:static dark:bg-slate-900 dark:text-white">
+                <nav>
+                    <ul class="block lg:flex">
+                        <li class="group py-2">
+                            <a href="#beranda" class="text-base py-2 mx-8 group-hover:text-primary">Beranda</a>
+                        </li>
+                        <li class="group py-2">
+                            <a href="#tentangsaya" class="text-base py-2 mx-8 group-hover:text-primary">Tentang Saya</a>
+                        </li>
+                        <li class="group py-2">
+                            <a href="#portfolio" class="text-base py-2 mx-8 group-hover:text-primary">Portfolio</a>
+                        </li>
+                        <li class="group py-2">
+                            <a href="#skill" class="text-base py-2 mx-8 group-hover:text-primary">Skill</a>
+                        </li>
+                        <li class="group py-2">
+                            <a href="#gallery" class="text-base py-2 mx-8 group-hover:text-primary">Gallery</a>
+                        </li>
+                        <div class="flex ml-8 my-4 lg:my-0 lg:items-center">
+                            <span class="mr-2 lg:text-base dark:text-white text-sm">Light</span>
+                            <input type="checkbox" class="hidden" id="toggle" checked>
+                        
+                            <label for="toggle">
+                                <div class="w-9 h-5 bg-slate-700 cursor-pointer rounded-full flex items-center">
+                                    <div id="toggle-circle" class="w-4 h-4 rounded-full bg-white ml-0.5 toggle-circle transition-all ease-in-out duration-500"></div>
+                                </div>
+                        
+                            </label>
+                            <span class="ml-2 dark:text-white text-sm lg:text-base">Dark</span>
+                        </div>
+                        
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </header>
+    <!-- ? Navbar End -->
+
+    <!-- ? Hero Section Start (Profile) -->
+    <section class="mt-14 pt-14 lg:mt-8 lg:pt-20 lg:px-16 px-7" id="beranda">
+    <div class="lg:flex overflow-hidden pt-4 grid place-items-center">
+    <div class="container lg:w-1/2 pr-24 lg:mt-27">
+        <h1 class="font-semibold text-primary mb-2 lg:text-2xl md:text-2xl">Halo Semua 👋, saya <span class="font-bold text-3xl text-slate-800 block lg:text-5xl dark:text-white whitespace-nowrap md:text-5xl">Marvel Tjenyani</span></h1>
+        
+        <h1 class="text-secondary md:text-xl dark:text-slate-500 font-medium mb-2 ">Student & <span class="text-slate-800 dark:text-white">Programmer</span></h1>
+
+        <p class="text-secondary pb-6 md:text-xl">"You can't change the world, but you can change <span class="text-slate-700 font-semibold dark:text-white">yourself.</span>"</p>
+
+        <a href="https://www.instagram.com/marveltjenyani/" class=" mt-1 text-base text-white bg-primary py-3 px-9 rounded-full hover:shadow-lg hover:opacity-80 trasnition md:py-4 lg:py-3 lg:px-9 md:px-10 duration-300 ease-in-out">Hubungi Saya</a>
+    </div>
+
+    <div class="w-full lg:w-1/2 self-end px-4 lg:mr-10">
+        <div class="relative mt-6 lg:mt-0">
+            <img src="/dist/me3-removebg-preview.png" alt="Marvel" class="mx-auto max-w-full lg:w-tab-img md:w-tab-img">
+        
+        <div class="absolute -bottom-20 -z-20 left-1/2 -translate-x-1/2 md:scale-150 md:-bottom-12 lg:scale-125 lg:-bottom-12">
+            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#14b8a6" d="M54.9,-57.1C64.6,-45.3,61.1,-22.7,57.7,-3.4C54.3,15.8,50.9,31.7,41.3,40.3C31.7,48.9,15.8,50.2,0.8,49.4C-14.3,48.6,-28.5,45.7,-41.9,37.1C-55.4,28.5,-67.9,14.3,-68.5,-0.5C-69,-15.3,-57.5,-30.7,-44.1,-42.4C-30.7,-54.2,-15.3,-62.3,3.7,-66C22.7,-69.7,45.3,-68.8,54.9,-57.1Z" transform="translate(100 100) scale(1.2)"/>
+            </svg>
+        </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    <!-- ? Hero Section End -->
+
+    <!-- ? Section 2 Start (About Me)-->
+    <section id="tentangsaya" class="lg:flex gap-4 pt-36 lg:px-16 px-7 md:px-12 mb-32">
+    <div class="lg:w-1/2">
+        <h1 class="text-primary font-bold text-xl lg:text-xl md:text-2xl mb-4">TENTANG SAYA</h1>
+        <h1 class="font-semibold text-2xl mb-2 lg:text-3xl md:text-3xl md:max-w-lg dark:text-white">Anak muda, bukan sembarang anak muda!</h1>
+        <p class="text-secondary max-w-lg md:max-w-full lg:max-w-lg md:text-md">Saya adalah seorang pelajar SMP kelas 9 di Jakarta. Saat portfolio ini dibuat, saya berumur 14 tahun. Saya termasuk ke dalam golongan orang yang suka akan hal-hal baru dan menantang, ambisius dan optimisme menjadi senjata saya untuk sampai di titik ini.</p>
+    </div>
+
+    <div class="lg:w-1/2">
+        <h1 class="font-semibold text-2xl mb-2 mt-10 lg:text-3xl md:text-3xl dark:text-white">Mari berteman!</h1>
+        <p class="text-secondary max-w-lg lg:max-w-full md:text-md">Tak kenal maka tak sayang, supaya lebih kenal, ikuti saya di platform di bawah ini ya!</p>
+
+        <div class="flex gap-3 md:gap-10 lg:gap-3 mt-6 items-center mb-20">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/marveltjenyani/" target="_blank" class="w-9 h-9 md:w-12 md:h-12 lg:w-9 lg:h-9 border border-slate-300 dark:border-slate-200 flex justify-center rounded-full hover:border-primary hover:bg-primary transition-all lg:scale-100 ease-in-out duration-300 group md:scale-125">
+                <svg width="20" class="md:scale-125 lg:scale-100 group py-2 group-hover:fill-white dark:fill-slate-200 fill-slate-400" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@marveltjenyani?_t=8hH7EB74y4m&_r=1" target="_blank" class="md:w-12 md:h-12 lg:w-9 lg:h-9  w-9 h-9 border border-slate-300 dark:border-slate-200  flex justify-center rounded-full hover:border-primary lg:scale-100 hover:bg-primary transition-all ease-in-out duration-300 group md:scale-125">
+                <svg width="20" class="group lg:scale-100 py-2 md:scale-125 group-hover:fill-white dark:fill-slate-200  fill-slate-400" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+
+            <!-- Twitter -->
+            <a href="https://x.com/Marvel09781623?t=6XbtDfYEs0DWxv9kcL37Rg&s=08" target="_blank" class="md:w-12 md:h-12 lg:w-9 lg:h-9  w-9 h-9 border border-slate-300 dark:border-slate-200  flex justify-center rounded-full hover:border-primary hover:bg-primary transition-all lg:scale-100 ease-in-out duration-300 group md:scale-125">
+                <svg role="img" width="20" class="md:scale-125 lg:scale-100 group py-2 group-hover:fill-white dark:fill-slate-200  fill-slate-400" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+            </a>
+        
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=100049187871851&mibextid=ZbWKwL" target="_blank" class="md:w-12 md:h-12 lg:w-9 lg:h-9  w-9 h-9 border border-slate-300 dark:border-slate-200  flex justify-center rounded-full hover:border-primary hover:bg-primary transition-all ease-in-out md:scale-125 duration-300 lg:scale-100 group">
+                <svg width="20" class="group py-2 md:scale-125 lg:scale-100 group-hover:fill-white dark:fill-slate-200  fill-slate-400" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/6282246785694" target="_blank" class="md:w-12 md:h-12 lg:w-9 lg:h-9  w-9 h-9 border border-slate-300 dark:border-slate-200 flex justify-center rounded-full hover:border-primary hover:bg-primary transition-all ease-in-out duration-300 md:scale-125 lg:scale-100 group">
+                <svg width="20" class="group md:scale-125 lg:scale-100 py-2 group-hover:fill-white dark:fill-slate-200  fill-slate-400" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            </a>
+        </div>
+    </div>
+
+    </section>
+    <!-- ? Section 2 End -->
+
+    <!--? Section 3 Start (Recently Project)-->
+    <section id="portfolio" class="bg-slate-100 dark:bg-slate-800 pt-32 px-7 lg:px-16 md:px-12 pb-32">
+    <div class="text-center">
+        <h1 class="font-semibold text-primary uppercase">Portfolio</h1>
+        <h1 class="font-semibold text-3xl mb-2 lg:text-5xl md:text-4xl dark:text-white">Project Terbaru</h1>
+        <p class="mb-8 text-secondary lg:max-w-xl lg:text-lg md:max-w-lg md:mx-auto lg:mx-auto">"Tidak ada guru yang lebih baik dari pengalaman," Selama 1 bulan terakhir, saya sudah membuat beberapa website project dengan fungsi dan tingkat kesulitan yang beragam.</p>
+    </div>
+    <div class="lg:columns-2">
+        <div class="mr-2">
+            <img class="mb-4" src="/dist/copy1.png" alt="Mimpi Kopi">
+            <h1 class="dark:text-white md:text-3xl lg:text-2xl font-semibold text-xl mb-2">Coffee Shop</h1>
+            <p class="text-sm text-secondary mb-20 lg:text-sm md:text-xl lg:mb-8">Menawarkan berbagai fitur menu, responsive design, hingga setting colour yang dapat memanjakan mata pembeli. </p>
+
+            <img class="mb-4" src="/dist/copy2.png" alt="Udemy">
+            <h1 class="dark:text-white font-semibold md:text-3xl lg:text-2xl text-xl mb-2">Online Courses</h1>
+            <p class="text-sm text-secondary lg:text-sm md:text-xl mb-20">Sebuah website Udemy <span class="font-semibold">COPY</span> dengan penyajian design yang sedikit berbeda.</p>
+        </div>
+
+        <div class="ml-2">
+            <img class="mb-4" src="/dist/copy3.png" alt="Sign In">
+            <h1 class="font-semibold text-xl mb-2 lg:text-2xl md:text-3xl dark:text-white">Sign In</h1>
+            <p class="text-sm md:text-xl lg:text-sm text-secondary mb-20">Sebuah landing page untuk tempat log-in yang interaktif.</p>
+
+            <img class="mb-4" src="/dist/cpy4.png" alt="Shop">
+            <h1 class="font-semibold text-xl mb-2 lg:text-2xl md:text-3xl dark:text-white">E-Commerce</h1>
+            <p class="text-sm md:text-xl lg:text-sm text-secondary">Sebuah laman website dengan penyajian design yang simple.</p>
+        </div>
+    </div>
+    </section>
+    <!--? Section 3 End -->
+
+    <!--? Section 4 Start (Skill Roadmap) -->
+    <section id="skill" class="bg-slate-900 dark:bg-slate-300 px-7 lg:px-16 md:px-12 py-32">
+        <h1 class="text-primary flex justify-center text-lg lg:text-xl md:text-xl font-semibold">Skill</h1>
+        <h1 class="flex justify-center text-3xl text-center text-white font-semibold lg:text-6xl dark:text-black md:text-5xl">Bahasa yang dikuasai</h1>
+        <p class= "mb-12 text-secondary mt-2 text-center lg:text-xl md:text-xl md:max-w-xl md:mx-auto lg:mt-4">Selama perjalanan coding saya, saya sudah menguasai beberapa bahasa sederhana seperti:</p>
+        
+
+    <div class="lg:flex md:flex md:gap-6 md:mx-auto md:justify-center md:pt-7 lg:gap-60 lg:mx-auto lg:justify-center lg:pt-7">
+        <div class="flex  items-center justify-center lg:gap-60 gap-20 mb-12
+        overflow-hidden">
+            <div class="w-24 md:w-36" id="container_image">
+                <img class="lg:h-36 opacity-100 mx-auto" src="/dist/html-removebg-preview.png" alt="html">
+                <h1 class="lg:text-3xl text-white text-center font-bold mt-2 text-2xl md:text-3xl dark:text-black">HTML</h1>
+            </div>
+            <div class="">
+            <div class="w-24 md:w-36 mx-auto" id="container_image2">
+                <img class="h-fit lg:h-36 opacity-100 mx-auto" src="/dist/js.png" alt="js">
+            </div>
+            <h1 class="text-white md:text-3xl lg:text-3xl text-center font-bold mt-2 text-xl dark:text-black">JavaScript</h1>
+        </div>
+        </div>
+        <div class="lg:block md:block flex items-center justify-center overflow-hidden group transition-all ease-in-out duration-300" id="container_image3">
+                <img class="h-20 md:h-36 md:pl-6 lg:pl-0 lg:h-36 opacity-100 md:translate-x-0 lg:translate-x-0" src="/dist/tailwindcss-removebg-preview.png" alt="tailwind">
+                <h1 class="text-white md:text-3xl lg:text-3xl text-center font-bold text-2xl md:mt-2 md:ml-0 lg:mt-2 ml-2 lg:ml-0 dark:text-black">Tailwindcss</h1>
+        </div>
+    </div>
+    </section>
+
+    <!--? Section 4 End -->
+
+    <!--? Section 5 Start -->
+    <section id="gallery" class="py-32 px-7 md:px-12 dark:bg-slate-800">
+        <h1 class="text-primary font-semibold text-center md:text-xl lg:text-xl">Gallery</h1>
+        <h1 class="font-bold text-4xl text-center mb-6 lg:mb-10 lg:text-6xl md:text-5xl dark:text-white">Gallery</h1>
+    
+    <div id="parent" class="lg:columns-2 lg:gap-16 lg:px-12 md:columns-2 md:gap-12">
+        <div class="w-full h-64 lg:h-96 rounded-xl mb-6 overflow-hidden relative">
+
+            <div class="w-full bg-slate-300 bg-opacity-60 backdrop-blur-[5px] h-7 absolute bottom-0 p-[0.20rem] items-center transition-all ease-in-out duration-1000 z-30" id="div_svg">
+                    <svg class="mx-auto transition-all ease-in-out duration-150" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="16 12 12 8 8 12"></polyline><line x1="12" y1="16" x2="12" y2="8"></line></svg>
+                
+                    <p class="text-[12px] transition-all ease-in-out duration-150 px-2 pt-2">Foto ini diambil di Paskal Hyper Square, Bandung saat perayaan tahun baru 2022.</p>
+
+            </div>
+
+            <img src="/dist/IMG-20231104-WA0001.jpg" alt="new year" class="transition-all ease-in-out duration-1000">
+
+        </div>
+
+        <!--  -->
+
+        <div class="w-full h-64 lg:h-96 rounded-xl mb-6 overflow-hidden relative">
+
+            <div class="w-full bg-slate-300 bg-opacity-60 backdrop-blur-[5px] h-7 absolute bottom-0 p-[0.20rem] items-center transition-all ease-in-out duration-1000 z-30" id="div_svg2">
+                    <svg class="mx-auto transition-all ease-in-out duration-150" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="16 12 12 8 8 12"></polyline><line x1="12" y1="16" x2="12" y2="8"></line></svg>
+                
+                    <p class="text-[12px] transition-all ease-in-out duration-150 px-2 pt-2">Foto ini diambil di Pulau Pari, 24 April 2023.</p>
+
+            </div>
+
+            <img src="/dist/IMG-20231104-WA0002.jpg" alt="new year" class="transition-all ease-in-out duration-1000">
+
+        </div>
+    
+        <div class="w-full h-64 lg:h-96 rounded-xl mb-6 overflow-hidden relative">
+
+            <div class="w-full bg-slate-300 bg-opacity-60 backdrop-blur-[5px] h-7 absolute bottom-0 p-[0.20rem] items-center transition-all ease-in-out duration-1000 z-30" id="div_svg3">
+                    <svg class="mx-auto transition-all ease-in-out duration-150" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="16 12 12 8 8 12"></polyline><line x1="12" y1="16" x2="12" y2="8"></line></svg>
+                
+                    <p class="text-[12px] transition-all ease-in-out duration-150 px-2 pt-2">Foto ini diambil di Kota Tua, 4 Desember 2022</p>
+
+            </div>
+
+            <img src="/dist/IMG-20231104-WA0003.jpg" alt="new year" class="transition-all ease-in-out duration-1000">
+
+        </div>
+
+        <div class="w-full h-64 lg:h-96 rounded-xl mb-6 overflow-hidden relative">
+
+            <div class="w-full bg-slate-300 bg-opacity-60 backdrop-blur-[5px] h-7 absolute bottom-0 p-[0.20rem] items-center transition-all ease-in-out duration-1000 z-30" id="div_svg4">
+                    <svg class="mx-auto transition-all ease-in-out duration-150" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="16 12 12 8 8 12"></polyline><line x1="12" y1="16" x2="12" y2="8"></line></svg>
+                
+                    <p class="text-[12px] transition-all ease-in-out duration-150 px-2 pt-2">Foto ini diambil di Pantai Perawan, 22 April 2023</p>
+
+            </div>
+
+            <img src="/dist/IMG-20231104-WA0004.jpg" alt="new year" class="transition-all ease-in-out duration-1000">
+
+        </div>
+
+    </div>
+    
+    </section>
+    <!--? Section 5 End -->
+
+    <!--? Footer Start -->
+    <footer class="py-24 px-7 md:px-12 bg-slate-900">
+
+    <div class="lg:flex lg:justify-between lg:px-32 md:flex md:justify-center md:gap-44">
+    <div>
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-10">MT</h1>
+    </div>
+        
+    <div>
+        <h1 class="text-white font-semibold mb-4 lg:text-xl">Kategori Tulisan</h1>
+        <ul class="mb-14">
+            <li class="text-white mb-3 hover:text-primary transition-all ease-in-out duration-300">Programming</li>
+            <li class="text-white mb-3 hover:text-primary transition-all ease-in-out duration-300">Teknologi</li>
+            <li class="text-white mb-3 hover:text-primary transition-all ease-in-out duration-300">Gaya Hidup</li>
+        </ul>
+    </div>
+
+    <div>
+        <h1 class="text-white font-semibold mb-4 text-xl">Tautan</h1>
+        <ul class="mb-14 block">
+
+            <li class="text-white mb-3 group transition-all ease-in-out duration-300">
+                <a href="#skill" class="group-hover:text-primary">Beranda</a>
+            </li>
+
+            <li class="text-white mb-3 group transition-all ease-in-out duration-300">
+                <a href="#tentangsaya" class="group-hover:text-primary">Tentang Saya</a>
+            </li>
+
+            <li class="text-white mb-3 group transition-all ease-in-out duration-300">
+                <a href="#portfolio" class="group-hover:text-primary">Portfolio</a>
+            </li>
+
+            <li class="text-white mb-3 group transition-all ease-in-out duration-300">
+                <a href="#skill" class="group-hover:text-primary">Skill</a>
+            </li>
+
+            <li class="text-white mb-3 group transition-all ease-in-out duration-300">
+                <a href="#gallery" class="group-hover:text-primary">Gallery</a>
+            </li>
+            </ul>
+    </div>
+    </div>
+        <hr class="">
+
+        <div class="justify-center flex gap-3 mt-8 items-center mb-20">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/marveltjenyani/" target="_blank" class="w-9 h-9 border border-slate-200 flex justify-center rounded-full hover:border-primary hover:bg-primary transition-all ease-in-out duration-300 group">
+                <svg width="20" class="group py-2-hover:fill-white fill-slate-200" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@marveltjenyani?_t=8hH7EB74y4m&_r=1" target="_blank" class="w-9 h-9 border border-slate-200 flex justify-center rounded-full hover:border-primary hover:bg-primary transition-all ease-in-out duration-300 group">
+                <svg width="20" class="group py-2-hover:fill-white fill-slate-200" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+
+            <!-- Twitter -->
+            <a href="https://x.com/Marvel09781623?t=6XbtDfYEs0DWxv9kcL37Rg&s=08" target="_blank" class="w-9 h-9 border border-slate-200 flex justify-center rounded-full hover:border-primary hover:bg-primary transition-all ease-in-out duration-300 group">
+                <svg role="img" width="20" class="group py-2 group-hover:fill-white fill-slate-200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=100049187871851&mibextid=ZbWKwL" target="_blank" class="w-9 h-9 border border-slate-200 flex justify-center rounded-full hover:border-primary hover:bg-primary transition-all ease-in-out duration-300 group">
+                <svg width="20" class="group py-2-hover:fill-white fill-slate-200" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/6282246785694" target="_blank" class="w-9 h-9 border border-slate-200 flex justify-center rounded-full hover:border-primary hover:bg-primary transition-all ease-in-out duration-300 group">
+                <svg width="20" class="group py-2-hover:fill-white fill-slate-200" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            </a>
+        </div>
+
+        <div class="text-secondary text-sm text-center">
+                <p class="">Dibuat oleh 🐱‍👤 <span class="text-primary font-semibold">Marvel Tjenyani</span>, menggunakan <span class="text-blue-400 font-semibold">Tailwind CSS.</span></p>
+
+        <p class="mt-4">Inspirated by <span class="font-semibold text-primary">Sandhika Galih</span></p>
+        </div>
+    </footer>
+    <!--? Footer End -->
+
+    <!--? Back to Start -->
+        <a id="totop" href="#beranda" class="hidden w-14 h-14 z-[9999] rounded-full fixed justify-center items-center right-4 bottom-4 bg-primary hover:animate-pulse">
+            <span class="block border border-2-white w-5 h-5 rotate-45 border-t-2 border-l-2 border-b-0 border-r-0 mt-2"></span>
+        </a>
+    <!--? Back to End -->
+
+    <script src="/src/script.js"></script>
+</body>
+</html>
